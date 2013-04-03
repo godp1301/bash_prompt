@@ -23,17 +23,17 @@ arrow=" → "
 
 user_name_prompt() {
   user="\u"
-  echo -n "$light_gray$user"
+  echo -n "$green$user"
 }
 
 host_name_prompt() {
   host="\h"
-  echo -n "$light_gray$host"
+  echo -n "$green$host"
 }
  
 dir_prompt() {
-  dir="\W"
-  echo -n "$light_red$dir"
+  dir="\w"
+  echo -n "$blue$dir"
 }
 
 is_git_dir() {
