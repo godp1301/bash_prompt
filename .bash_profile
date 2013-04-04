@@ -11,7 +11,6 @@ export HISTCONTROL=ignoredups
 export HISTCONTROL=ignoreboth
 
 export EDITOR=vim
-export SVN_EDITOR=${EDITOR}
 export PATH=/usr/local/sbin:/usr/local/bin:$PATH
 export MANPATH=$MANPATH:/opt/local/share/man
 export INFOPATH=$INFOPATH:/opt/local/share/info
@@ -45,8 +44,4 @@ if [ -f /opt/local/etc/bash_completion ]; then
 	. /opt/local/etc/bash_completion
 fi
 
-source /usr/local/bin/virtualenvwrapper.sh
-
-[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.bash_prompt" ]] && source "$HOME/.bash_prompt"
